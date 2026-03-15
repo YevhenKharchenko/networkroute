@@ -1,0 +1,148 @@
+.advantages-section {
+  padding-top: 80px;
+
+  @include media(desktop) {
+    padding-top: 140px;
+  }
+}
+
+.advantages-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.advantages-content-wrapper {
+  background: #d9d9d9;
+  padding: 30px 20px;
+  position: relative;
+
+  @include media(desktop) {
+    background: #e6ecd9;
+    padding: 40px 80px;
+  }
+}
+
+.advantages-title {
+  margin-bottom: 407px;
+
+  @include media(desktop) {
+    margin-bottom: 182px;
+  }
+}
+
+.advantages-text {
+  border: 3px solid #64a127;
+  border-radius: 8px;
+  padding: 7px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #1e1e1e;
+  width: 100%;
+  max-width: max-content;
+
+  @include media(desktop) {
+  }
+}
+
+.advantages-first-text {
+  position: absolute;
+  top: 233px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include media(desktop) {
+    top: 199px;
+    left: 245px;
+    transform: none;
+  }
+}
+
+.advantages-second-text {
+  position: absolute;
+  top: 293px;
+  left: 50%;
+  transform: rotate(-14deg) translateX(-50%);
+
+  @include media(desktop) {
+    top: 160px;
+    left: 518px;
+    transform: rotate(-14deg);
+  }
+}
+
+.advantages-third-text {
+  position: absolute;
+  transform: rotate(-14deg);
+  top: 396px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include media(desktop) {
+    top: 189px;
+    right: 437px;
+    left: auto;
+    transform: none;
+  }
+}
+
+.advantages-fourth-text {
+  position: absolute;
+  top: 535px;
+  left: 50%;
+  transform: rotate(14deg) translateX(-50%);
+
+  @include media(desktop) {
+    top: 150px;
+    right: 198px;
+    left: auto;
+    transform: rotate(14deg);
+  }
+}
+
+.advantages-right-star-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 178px;
+    right: 80px;
+  }
+}
+
+.advantages-left-star-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: 161px;
+    left: 80px;
+  }
+}
+
+.advantages-subtitle {
+  font-family: 'Bungee', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  color: #64a127;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 36px;
+  }
+}
+
+.advantages-btn {
+  @include media(desktop) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
