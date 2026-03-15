@@ -1,71 +1,101 @@
 .uniqueness-section {
+  @include media(desktop) {
+  }
+}
+
+.uniqueness-bg-wrapper {
   padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 140px;
+    padding-top: 150px;
+    max-width: 1440px;
   }
 }
 
 .uniqueness-container {
+}
+
+.uniqueness-title {
   @include media(desktop) {
   }
 }
 
-.uniqueness-content-wrapper {
+.uniqueness-swiper-container {
+  max-width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+
   @include media(desktop) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 82px;
+    max-width: 1440px;
+  }
+}
+
+.uniqueness-swiper-container.show {
+  visibility: visible;
+}
+
+.uniqueness-swiper-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.uniqueness-slide {
+  width: 100%;
+  max-width: 305px;
+
+  @include media(desktop) {
   }
 }
 
 .uniqueness-img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-
   @include media(desktop) {
-    margin: 0;
   }
 }
 
-.uniqueness-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.controls {
+  display: none;
 
   @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    max-width: 522px;
+    margin-top: 28px;
   }
 }
 
-.uniqueness-list-item {
+.arrow-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
+  transition: transform 0.3s ease-in-out;
 
-  &:nth-child(1) {
-    align-items: start;
+  &:active {
+    transform: scale(0.9);
   }
 
   @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+
+      .arrow-icon {
+      }
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      transform: none;
+    }
   }
 }
 
-.check-icon {
-  min-width: 34px;
-}
-
-.uniqueness-item-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #1e1e1e;
-
-  @include media(desktop) {
-  }
+.arrow-icon {
 }
