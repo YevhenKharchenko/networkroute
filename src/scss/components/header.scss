@@ -62,11 +62,11 @@
 }
 
 .nav-list-link {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #1e1e1e;
+  color: #155e63;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +78,7 @@
   &:focus,
   &:active,
   &.active {
-    color: #fe7e17;
+    color: #ff6b4a;
   }
 }
 
